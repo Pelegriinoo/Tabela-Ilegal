@@ -19,17 +19,17 @@
        {
          "nome": "ABAIXO DE 1 MILHÃO",
          "icone": "<i class='fas fa-money-bill-wave'></i>",
-         "preco_regular": "30%",
-         "preco_parceria_min": "25%",
-         "preco_parceria_max": "30%",
+         "preco_regular": "25%",
+         "preco_parceria_min": "20%",
+         "preco_parceria_max": "25%",
          "isPercentage": true
        },
        {
          "nome": "ACIMA DE 1 MILHÃO",
          "icone": "<i class='fas fa-money-bill-wave'></i>",
-         "preco_regular": "25%",
-         "preco_parceria_min": "20%",
-         "preco_parceria_max": "25%",
+         "preco_regular": "20%",
+         "preco_parceria_min": "15%",
+         "preco_parceria_max": "20%",
          "isPercentage": true
        }
      ]
@@ -37,9 +37,9 @@
    "drogas": {
      "titulo": "Drogas",
      "itens": [
-       { "nome": "MACONHA", "icone": "<i class='fas fa-cannabis'></i>", "preco_regular": 660, "preco_parceria_min": 577, "preco_parceria_max": 660 },
-       { "nome": "COCAÍNA", "icone": "<i class='fas fa-snowflake'></i>", "preco_regular": 660, "preco_parceria_min": 577, "preco_parceria_max": 660 },
-       { "nome": "METANFETAMINA", "icone": "<i class='fas fa-pills'></i>", "preco_regular": 660, "preco_parceria_min": 577, "preco_parceria_max": 660 }
+       { "nome": "MACONHA", "icone": "<i class='fas fa-cannabis'></i>", "preco_regular": 400, "preco_parceria_min": 350, "preco_parceria_max": 400 },
+       { "nome": "COCAÍNA", "icone": "<i class='fas fa-snowflake'></i>", "preco_regular": 400, "preco_parceria_min": 350, "preco_parceria_max": 400 },
+       { "nome": "METANFETAMINA", "icone": "<i class='fas fa-pills'></i>", "preco_regular": 400, "preco_parceria_min": 350, "preco_parceria_max": 400 }
      ]
    },
    "municao": {
