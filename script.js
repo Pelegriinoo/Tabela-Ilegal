@@ -12,11 +12,13 @@ document.addEventListener('DOMContentLoaded', inicializarAplicacao);
  */
 async function inicializarAplicacao() {
   try {
-        const searchInput = document.getElementById('search-input');
+    // Limpa campo de pesquisa
+    const searchInput = document.getElementById('search-input');
     if (searchInput) {
       searchInput.value = '';
       limparResultadosBusca();
     }
+    
     // Adiciona estilos personalizados
     adicionarEstilosPersonalizados();
     
@@ -28,14 +30,24 @@ async function inicializarAplicacao() {
     preencherPagina(data);
     inicializarAbas();
     inicializarPesquisa();
-    inicializarCalculadora();
+    inicializarCalculadora(); // Inicializa calculadora primeiro
+    
+    // AGORA limpa valores da calculadora
+    const valorInput = document.getElementById('valor-sujo');
+    if (valorInput) {
+      valorInput.value = '';
+      document.getElementById('taxa-aplicada').textContent = '-';
+      document.getElementById('valor-taxa').textContent = '-';
+      document.getElementById('valor-limpo').textContent = '-';
+    }
+    
     melhorarInterface();
     
-    // Exibe loader durante o carregamento (opcional)
+    // Exibe loader
     document.getElementById('loader')?.classList.add('hidden');
   } catch (erro) {
     console.error('Erro ao inicializar aplicação:', erro);
-    exibirMensagemErro('Não foi possível inicializar a aplicação. Por favor, recarregue a página.');
+    exibirMensagemErro('Não foi possível inicializar a aplicação.');
   }
 }
 
@@ -195,37 +207,52 @@ function criarCardItem(item, categoriaId) {
  * Inicializa as abas
  */
 function inicializarAbas() {
-  document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
-      // Remove classe ativa de todas as abas
-      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-      
-      // Adiciona classe ativa à aba clicada
-      button.classList.add('active');
-      
-      // Exibe o conteúdo da aba
-      const tabId = button.getAttribute('data-tab');
-      document.getElementById(tabId).classList.add('active');
-      
-      // Limpa resultado de busca E o campo de busca
-      const searchInput = document.getElementById('search-input');
-      if (searchInput) {
-        searchInput.value = '';
-      }
-      limparResultadosBusca();
-      
-      // Mostra todos os cards da aba atual
-      document.querySelectorAll(`#${tabId} .item-card`).forEach(card => {
-        card.style.display = 'block';
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0)';
-      });
-      
-      // Anima cards
-      animarCardsAoCarregar(tabId);
-    });
-  });
+ // Tenta restaurar a aba anteriormente selecionada
+ const ultimaAba = localStorage.getItem('ultimaAba');
+ if (ultimaAba) {
+   const tabButton = document.querySelector(`.tab-button[data-tab="${ultimaAba}"]`);
+   if (tabButton) {
+     // Simula um clique na última aba usada
+     setTimeout(() => {
+       tabButton.click();
+     }, 10);
+   }
+ }
+
+ document.querySelectorAll('.tab-button').forEach(button => {
+   button.addEventListener('click', () => {
+     // Remove classe ativa de todas as abas
+     document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+     document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+     
+     // Adiciona classe ativa à aba clicada
+     button.classList.add('active');
+     
+     // Exibe o conteúdo da aba
+     const tabId = button.getAttribute('data-tab');
+     document.getElementById(tabId).classList.add('active');
+     
+     // Salva a aba selecionada
+     localStorage.setItem('ultimaAba', tabId);
+     
+     // Limpa resultado de busca E o campo de busca
+     const searchInput = document.getElementById('search-input');
+     if (searchInput) {
+       searchInput.value = '';
+     }
+     limparResultadosBusca();
+     
+     // Mostra todos os cards da aba atual
+     document.querySelectorAll(`#${tabId} .item-card`).forEach(card => {
+       card.style.display = 'block';
+       card.style.opacity = '1';
+       card.style.transform = 'translateY(0)';
+     });
+     
+     // Anima cards
+     animarCardsAoCarregar(tabId);
+   });
+ });
 }
 /**
  * Inicializa a funcionalidade de pesquisa
