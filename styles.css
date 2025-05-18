@@ -1484,3 +1484,220 @@ input:checked + .slider:before {
 .money-input-container input::placeholder {
     color: var(--text-muted);
 }
+/* Melhorar acessibilidade */
+.tab-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Aprimorar estados de foco para inputs */
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--border-glow);
+}
+
+/* Melhorar efeito de glassmorphism */
+.search-container, .tabs, .calculator-card, .info-banner {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Otimizar animações */
+.item-card, .tab-button, .calculator-card {
+  will-change: transform;
+}
+
+/* Adicionar interatividade aos preços */
+.price-regular:hover, .price-range:hover {
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Melhorar a responsividade */
+@media (max-width: 480px) {
+  .calculator-body {
+    padding: 1rem;
+  }
+  
+  .calculator-header {
+    font-size: 1.1rem;
+  }
+  
+  .toggle-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.item-card.redesigned {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: linear-gradient(135deg, rgba(35, 35, 35, 0.9), rgba(28, 28, 30, 0.9));
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+}
+
+.item-card.redesigned:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 207, 255, 0.15), transparent);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(25, 25, 27, 0.7);
+}
+
+.card-header .item-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  color: var(--accent);
+  background-color: rgba(0, 207, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-header .item-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.price-row:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.price-row.regular {
+  background-color: rgba(40, 40, 45, 0.5);
+}
+
+.price-row.regular:after {
+  background-color: var(--regular-price);
+}
+
+.price-row.parceria {
+  background-color: rgba(0, 120, 150, 0.15);
+}
+
+.price-row.parceria:after {
+  background-color: var(--partner-price);
+}
+
+.price-row:hover {
+  transform: translateX(5px);
+}
+
+.price-row:hover:after {
+  width: 5px;
+}
+
+.price-label {
+  font-weight: 600;
+  font-size: 1rem;
+  flex: 1;
+  color: var(--text-secondary);
+}
+
+.price-row.regular .price-value {
+  color: var(--regular-price);
+}
+
+.price-row.parceria .price-value {
+  color: var(--partner-price);
+}
+
+.price-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: right;
+  background: rgba(20, 20, 22, 0.6);
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Efeitos hover aprimorados */
+.item-card.redesigned:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg), 0 0 15px rgba(0, 207, 255, 0.2);
+  border-color: rgba(0, 207, 255, 0.2);
+}
+
+.item-card.redesigned:hover .card-header {
+  background: rgba(30, 30, 35, 0.8);
+}
+
+.item-card.redesigned:hover .item-icon {
+  transform: scale(1.1);
+  background-color: rgba(0, 207, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 207, 255, 0.3);
+}
+
+/* Adiciona sombreamento/brilho nos preços ao passar o mouse */
+.item-card.redesigned:hover .price-value {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 207, 255, 0.2);
+}
+
+/* Animações*/
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+  50% { box-shadow: 0 0 12px rgba(0, 207, 255, 0.3); }
+}
+
+.price-row:hover .price-value {
+  animation: pulseGlow 1.5s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .price-row {
+    padding: 12px 15px;
+  }
+  
+  .card-header {
+    padding: 12px 15px;
+  }
+  
+  .price-value, .price-label {
+    font-size: 0.95rem;
+  }
+}
