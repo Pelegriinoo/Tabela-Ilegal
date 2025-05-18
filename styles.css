@@ -1666,9 +1666,10 @@ input:focus-visible {
 }
 
 .item-card.redesigned:hover .item-icon {
-  transform: scale(1.1);
-  background-color: rgba(0, 207, 255, 0.2);
-  box-shadow: 0 0 10px rgba(0, 207, 255, 0.3);
+  transform: scale(1.05);
+  color: var(--text-primary); /* Mantém a cor original */
+  background-color: transparent; /* Remove o fundo azul */
+  box-shadow: 0 0 10px rgba(0, 207, 255, 0.5), 0 0 20px rgba(0, 207, 255, 0.3);
 }
 
 /* Adiciona sombreamento/brilho nos preços ao passar o mouse */
