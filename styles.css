@@ -1702,3 +1702,49 @@ input:focus-visible {
     font-size: 0.95rem;
   }
 }
+/* Efeito neon progressivo para o ícone */
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 207, 255, 0.1);
+    background-color: rgba(0, 207, 255, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.4), 0 0 30px rgba(0, 207, 255, 0.2);
+    background-color: rgba(0, 207, 255, 0.15);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 207, 255, 0.1);
+    background-color: rgba(0, 207, 255, 0.05);
+  }
+}
+
+.card-header .item-icon {
+  /* Mantém as propriedades existentes */
+  color: var(--text-primary); /* Cor normal, não totalmente azul */
+  transition: all 0.3s ease;
+}
+
+.item-card.redesigned:hover .item-icon {
+  animation: neonPulse 2s infinite;
+  transform: scale(1.05);
+  /* A cor do texto permanece normal */
+}
+
+/* Adicione um elemento pseudo para criar o efeito de brilho */
+.card-header .item-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  background: radial-gradient(circle, rgba(0, 207, 255, 0.4) 0%, transparent 70%);
+  transition: opacity 0.3s ease;
+}
+
+.item-card.redesigned:hover .item-icon::before {
+  opacity: 1;
+}
