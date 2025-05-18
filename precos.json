@@ -1,0 +1,259 @@
+{
+  "categorias": {
+    "armamento": {
+      "titulo": "Armamento",
+      "itens": [
+        {
+          "nome": "SIG SAUER 556",
+          "icone": "🔫",
+          "preco_regular": 85000,
+          "preco_parceria_min": 76500,
+          "preco_parceria_max": 85000
+        },
+        {
+          "nome": "GLOCK RAJADA",
+          "icone": "🔫",
+          "preco_regular": 35000,
+          "preco_parceria_min": 32000,
+          "preco_parceria_max": 35000
+        },
+        {
+          "nome": "G36C",
+          "icone": "🔫",
+          "preco_regular": 75000,
+          "preco_parceria_min": 67500,
+          "preco_parceria_max": 75000
+        },
+        {
+          "nome": "AUG",
+          "icone": "🔫",
+          "preco_regular": 45000,
+          "preco_parceria_min": 40500,
+          "preco_parceria_max": 45000
+        },
+        {
+          "nome": "FIVE SEVEN",
+          "icone": "🔫",
+          "preco_regular": 20000,
+          "preco_parceria_min": 18000,
+          "preco_parceria_max": 20000
+        },
+        {
+          "nome": "TEC-9",
+          "icone": "🔫",
+          "preco_regular": 30000,
+          "preco_parceria_min": 27000,
+          "preco_parceria_max": 30000
+        },
+        {
+          "nome": "M1911",
+          "icone": "🔫",
+          "preco_regular": 13500,
+          "preco_parceria_min": 12150,
+          "preco_parceria_max": 13500
+        },
+        {
+          "nome": "UZI",
+          "icone": "🔫",
+          "preco_regular": 35000,
+          "preco_parceria_min": 31500,
+          "preco_parceria_max": 35000
+        }
+      ]
+    },
+    "lavagem": {
+      "titulo": "Lavagem",
+      "itens": [
+        {
+          "nome": "ABAIXO DE 1 MILHÃO",
+          "icone": "💰",
+          "preco_regular": "30%",
+          "preco_parceria_min": "25%",
+          "preco_parceria_max": "30%",
+          "isPercentage": true
+        },
+        {
+          "nome": "ACIMA DE 1 MILHÃO",
+          "icone": "💰",
+          "preco_regular": "25%",
+          "preco_parceria_min": "20%",
+          "preco_parceria_max": "25%",
+          "isPercentage": true
+        }
+      ]
+    },
+    "drogas": {
+      "titulo": "Drogas",
+      "itens": [
+        {
+          "nome": "MACONHA",
+          "icone": "🌿",
+          "preco_regular": 400,
+          "preco_parceria_min": 350,
+          "preco_parceria_max": 400
+        },
+        {
+          "nome": "COCAÍNA",
+          "icone": "❄️",
+          "preco_regular": 400,
+          "preco_parceria_min": 350,
+          "preco_parceria_max": 400
+        },
+        {
+          "nome": "METANFETAMINA",
+          "icone": "🟦",
+          "preco_regular": 400,
+          "preco_parceria_min": 350,
+          "preco_parceria_max": 400
+        }
+      ]
+    },
+    "municao": {
+      "titulo": "Munição",
+      "itens": [
+        {
+          "nome": "RIFLE",
+          "icone": "🔫",
+          "preco_regular": 230,
+          "preco_parceria_min": 200,
+          "preco_parceria_max": 230
+        },
+        {
+          "nome": "SUB METRALHADORA",
+          "icone": "🔫",
+          "preco_regular": 170,
+          "preco_parceria_min": 150,
+          "preco_parceria_max": 170
+        },
+        {
+          "nome": "PISTOLA",
+          "icone": "🔫",
+          "preco_regular": 120,
+          "preco_parceria_min": 100,
+          "preco_parceria_max": 120
+        },
+        {
+          "nome": "MOSQUETE",
+          "icone": "🔫",
+          "preco_regular": 300,
+          "preco_parceria_min": 270,
+          "preco_parceria_max": 300
+        },
+        {
+          "nome": "ESCOPETA",
+          "icone": "🔫",
+          "preco_regular": 300,
+          "preco_parceria_min": 270,
+          "preco_parceria_max": 300
+        }
+      ]
+    },
+    "itens": {
+      "titulo": "Itens Ilegais",
+      "itens": [
+        {
+          "nome": "COLETE",
+          "icone": "🛡️",
+          "preco_regular": 2500,
+          "preco_parceria_min": 2250,
+          "preco_parceria_max": 2500
+        },
+        {
+          "nome": "ATTACHS",
+          "icone": "🔧",
+          "preco_regular": 1500,
+          "preco_parceria_min": 1200,
+          "preco_parceria_max": 1500
+        },
+        {
+          "nome": "ALGEMA",
+          "icone": "⛓️",
+          "preco_regular": 1500,
+          "preco_parceria_min": 1350,
+          "preco_parceria_max": 1500
+        },
+        {
+          "nome": "CAPUZ",
+          "icone": "🧢",
+          "preco_regular": 500,
+          "preco_parceria_min": 450,
+          "preco_parceria_max": 500
+        },
+        {
+          "nome": "LOCKPICK",
+          "icone": "🔓",
+          "preco_regular": 5000,
+          "preco_parceria_min": 4500,
+          "preco_parceria_max": 5000
+        },
+        {
+          "nome": "LOCKPICK DE COBRE",
+          "icone": "🔓",
+          "preco_regular": 4000,
+          "preco_parceria_min": 3600,
+          "preco_parceria_max": 4000
+        },
+        {
+          "nome": "C4",
+          "icone": "💣",
+          "preco_regular": 1500,
+          "preco_parceria_min": 1350,
+          "preco_parceria_max": 1500
+        },
+        {
+          "nome": "CARTÃO COMUM",
+          "icone": "💳",
+          "preco_regular": 1500,
+          "preco_parceria_min": 1300,
+          "preco_parceria_max": 1500
+        },
+        {
+          "nome": "CARTÃO ÉPICO",
+          "icone": "💳",
+          "preco_regular": 8000,
+          "preco_parceria_min": 7200,
+          "preco_parceria_max": 8000
+        },
+        {
+          "nome": "CARTÃO LENDÁRIO",
+          "icone": "💳",
+          "preco_regular": 10000,
+          "preco_parceria_min": 9000,
+          "preco_parceria_max": 10000
+        },
+        {
+          "nome": "PAGER",
+          "icone": "📟",
+          "preco_regular": 10000,
+          "preco_parceria_min": 8500,
+          "preco_parceria_max": 10000
+        },
+        {
+          "nome": "BLOQUEADOR DE SINAL",
+          "icone": "📱",
+          "preco_regular": 4000,
+          "preco_parceria_min": 3500,
+          "preco_parceria_max": 4000
+        },
+        {
+          "nome": "MOCHILA",
+          "icone": "🎒",
+          "preco_regular": 5000,
+          "preco_parceria_min": 4500,
+          "preco_parceria_max": 5000
+        },
+        {
+          "nome": "CORDA",
+          "icone": "🧵",
+          "preco_regular": 1000,
+          "preco_parceria_min": 800,
+          "preco_parceria_max": 1000
+        }
+      ]
+    }
+  },
+  "configuracoes": {
+    "data_atualizacao": "Maio de 2025",
+    "titulo_site": "Tabela de Preços - AVENUE ILEGAL"
+  }
+}
