@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
        
        // Processa todos os cards com o termo de busca
        allItemCards.forEach(card => {
-         const itemName = card.querySelector('.item-name').textContent.toLowerCase();
+         const itemName = card.querySelector('.item-title').textContent.toLowerCase();
          const tabContent = card.closest('.tab-content');
          const tabId = tabContent.id;
          
