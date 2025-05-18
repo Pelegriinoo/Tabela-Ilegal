@@ -44,11 +44,11 @@ function preencherPagina(data) {
                 </div>
                 <div class="price-section">
                   <div class="price-row regular">
-                    <span class="price-label">Preço:</span>
+                    <span class="price-label">Preço</span>
                     <span class="price-value">${precoRegular}</span>
                   </div>
                   <div class="price-row parceria">
-                    <span class="price-label">Parceria:</span>
+                    <span class="price-label">Parceria</span>
                     <span class="price-value">${precosParceria}</span>
                   </div>
                 </div>
@@ -69,11 +69,11 @@ function preencherPagina(data) {
                 </div>
                 <div class="price-section">
                   <div class="price-row regular">
-                    <span class="price-label">Preço:</span>
+                    <span class="price-label">Preço</span>
                     <span class="price-value">${precoRegular}</span>
                   </div>
                   <div class="price-row parceria">
-                    <span class="price-label">Parceria:</span>
+                    <span class="price-label">Parceria</span>
                     <span class="price-value">${precoMinParceria} ~ ${precoMaxParceria}</span>
                   </div>
                 </div>
