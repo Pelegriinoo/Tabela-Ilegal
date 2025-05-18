@@ -309,22 +309,27 @@ document.addEventListener('DOMContentLoaded', function() {
        });
        
        // Se o campo de busca estiver vazio, mostra apenas os itens da aba ativa
-       if (searchTerm === '') {
-         const activeTabId = document.querySelector('.tab-content.active').id;
-         document.querySelectorAll(`#${activeTabId} .item-card`).forEach(card => {
-           card.style.display = 'block';
-           setTimeout(() => {
-             card.style.opacity = '1';
-             card.style.transform = 'translateY(0)';
-           }, 50);
-         });
-         
-         // Limpa o indicador de resultados, se existir
-         const resultIndicator = document.querySelector('.search-results-indicator');
-         if (resultIndicator) resultIndicator.remove();
-         
-         return;
-       }
+if (searchTerm === '') {
+  // Esconde todos os cards primeiro
+  allItemCards.forEach(card => {
+    card.style.display = 'none';
+    card.classList.remove('search-result');
+  });
+  
+  // Mostra apenas os cards da aba ativa
+  const activeTabId = document.querySelector('.tab-content.active').id;
+  document.querySelectorAll(`#${activeTabId} .item-card`).forEach(card => {
+    card.style.display = 'block';
+    card.style.opacity = '1';
+    card.style.transform = 'translateY(0)';
+  });
+  
+  // Limpa o indicador de resultados, se existir
+  const resultIndicator = document.querySelector('.search-results-indicator');
+  if (resultIndicator) resultIndicator.remove();
+  
+  return;
+}
        
        // Processa todos os cards com o termo de busca
        allItemCards.forEach(card => {
