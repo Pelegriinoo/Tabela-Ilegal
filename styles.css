@@ -951,10 +951,6 @@ footer .info-text {
 
 /* Continuação do CSS anterior */
 
-.pulse-element {
-  animation: pulseGlow 3s infinite;
-}
-
 /* Efeitos de hover adicionais */
 .item-card:hover .item-icon {
   transform: scale(1.1);
@@ -967,28 +963,6 @@ footer .info-text {
 }
 
 /* EFEITOS VISUAIS ADICIONAIS */
-.decorative-shape {
-  position: fixed;
-  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-  border-radius: 50%;
-  opacity: 0.03;
-  z-index: -1;
-  filter: blur(60px);
-}
-
-.shape-1 {
-  width: 500px;
-  height: 500px;
-  top: -200px;
-  right: -100px;
-}
-
-.shape-2 {
-  width: 600px;
-  height: 600px;
-  bottom: -300px;
-  left: -200px;
-}
 
 /* Adiciona barra de rolagem personalizada */
 ::-webkit-scrollbar {
@@ -1016,40 +990,7 @@ footer .info-text {
   margin-top: auto;
 }
 
-.item-badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 5px 12px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 700;
-  border-radius: 20px;
-  box-shadow: var(--shadow-md);
-  display: none;
-}
-
-.item-card.premium .item-badge {
-  display: block;
-}
-
 /* Efeito de loading nos botões */
-.loading-btn {
-  position: relative;
-  pointer-events: none;
-}
-
-.loading-btn::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  animation: loadingEffect 1.5s infinite;
-}
 
 @keyframes loadingEffect {
   0% { transform: translateX(-100%); }
@@ -1172,60 +1113,6 @@ main::after {
 }
 
 /* Notificação flutuante */
-.notification {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 15px 25px;
-  background: linear-gradient(135deg, rgba(40, 40, 40, 0.9), rgba(30, 30, 30, 0.9));
-  color: var(--text-primary);
-  border-radius: 10px;
-  box-shadow: var(--shadow-lg);
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--border);
-  transform: translateX(200%);
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 1000;
-}
-
-.notification.active {
-  transform: translateX(0);
-}
-
-.notification-icon {
-  font-size: 24px;
-  color: var(--accent);
-}
-
-.notification-content {
-  flex-grow: 1;
-}
-
-.notification-title {
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.notification-message {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
-.notification-close {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 20px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.notification-close:hover {
-  color: var(--text-primary);
-}
 
 /* RESPONSIVIDADE APRIMORADA */
 @media (max-width: 992px) {
@@ -1362,25 +1249,6 @@ main::after {
 }
 
 /* Adiciona elementos decorativos ao layout */
-.decorative-corner {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.corner-top-right {
-  top: 0;
-  right: 0;
-  background: radial-gradient(circle at top right, rgba(126, 34, 206, 0.08), transparent 70%);
-}
-
-.corner-bottom-left {
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.08), transparent 70%);
-}
 
 /* Adiciona animação sutil de destaque aos preços */
 @keyframes pricePulse {
@@ -1395,81 +1263,14 @@ main::after {
 }
 
 /* Estiliza o número do preço de forma mais destacada */
-.price-value {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.price-regular .price-value {
-  color: var(--regular-price);
-}
-
-.partner-price .price-value {
-  color: var(--partner-price);
-}
 
 /* Adiciona detalhes sutis de design aos cards */
-.item-detail {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-  opacity: 0.1;
-  z-index: -1;
-}
-
-.detail-top-right {
-  top: -10px;
-  right: -10px;
-}
-
-.detail-bottom-left {
-  bottom: -10px;
-  left: -10px;
-}
 
 /* Adiciona efeitos 3D sutis aos elementos */
-.three-d-element {
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
 
 /* Melhorias no footer */
-footer .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.social-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(40, 40, 40, 0.8), rgba(30, 30, 30, 0.8));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-secondary);
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  border: 1px solid var(--border);
-}
-
-.social-link:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
-  color: white;
-}
 
 /* Adiciona efeito de vidro (glassmorphism) aos elementos */
-.glass-effect {
-  background: rgba(30, 30, 30, 0.6);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-md);
-}
 
 /* Redefine a aparência dos preços para algo mais impactante */
 .price-container {
@@ -1508,26 +1309,10 @@ footer .social-links {
 }
 
 /* Efeitos de texto neón para títulos */
-.neon-text {
-  color: var(--text-primary);
-  text-shadow: 0 0 5px rgba(126, 34, 206, 0.5), 0 0 10px rgba(126, 34, 206, 0.3);
-}
 
 .category-title {
   position: relative;
   z-index: 1;
-}
-
-.category-title.neon-text::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), transparent);
-  box-shadow: 0 0 10px var(--accent);
-  z-index: -1;
 }
 
 /* Estiliza a grade para exibir melhor os cartões */
