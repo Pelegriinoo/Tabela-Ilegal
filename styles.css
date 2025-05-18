@@ -438,10 +438,12 @@ header p {
   z-index: -1;
 }
 
+/* Versão corrigida: */
 .info-banner-icon {
   font-size: 3rem;
   align-self: flex-start;
   background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  background-clip: text;          /* Adicionada esta linha */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: var(--shadow-sm);
