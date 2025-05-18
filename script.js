@@ -497,8 +497,8 @@ function inicializarCalculadora() {
     
     if (tipo === 'regular') {
       infoElement.innerHTML = `
-        <li>Regular: <strong>30%</strong> para valores abaixo de 1 milhão</li>
-        <li>Regular: <strong>25%</strong> para valores acima de 1 milhão</li>
+        <li>Regular: <strong>25%</strong> para valores abaixo de 1 milhão</li>
+        <li>Regular: <strong>20%</strong> para valores acima de 1 milhão</li>
       `;
     } else {
       infoElement.innerHTML = `
@@ -525,8 +525,8 @@ function inicializarCalculadora() {
     
     // Calcula taxa baseada no tipo e valor
     let taxa = tipoPreco === 'regular' 
-      ? (valorSujo < 1000000 ? 0.30 : 0.25)
-      : (valorSujo < 1000000 ? 0.25 : 0.20);
+      ? (valorSujo < 1000000 ? 0.25 : 0.20)
+      : (valorSujo < 1000000 ? 0.20 : 0.15);
     
     const valorTaxa = valorSujo * taxa;
     const valorLimpo = valorSujo - valorTaxa;
@@ -867,6 +867,7 @@ function adicionarEstilosPersonalizados() {
   `;
   document.head.appendChild(style);
 }
+
 
 /**
  * Adiciona estilos redesenhados para os cartões
