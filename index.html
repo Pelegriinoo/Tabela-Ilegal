@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="description" content="Catálogo de preços para itens virtuais de jogo">
 </head>
@@ -85,8 +85,8 @@
                       <h3>Como Funciona a Lavagem</h3>
                       <p>A lavagem do dinheiro é realizada com as seguintes taxas:</p>
                       <ul id="info-tipo-preco">
-                          <li>Regular: <strong>25%</strong> para valores abaixo de 1 milhão</li>
-                          <li>Regular: <strong>20%</strong> para valores acima de 1 milhão</li>
+                        <li>Sem Parceria - <strong>25%</strong> para valores abaixo de 1 milhão</li>
+                        <li>Sem Parceria - <strong>20%</strong> para valores acima de 1 milhão</li>
                       </ul>
                       <p>Parceiros têm acesso a taxas reduzidas de 20% e 15% respectivamente.</p>
                   </div>
@@ -100,7 +100,7 @@
                       
                       <div class="calculator-body">
                           <div class="input-group">
-                              <label for="valor-sujo">Valor a Lavar:</label>
+                              <label for="valor-sujo">Valor a Lavar</label>
                               <div class="money-input-container">
                                   <span class="money-symbol">$</span>
                                   <input type="text" id="valor-sujo" placeholder="Digite o valor a lavar..." min="0">
@@ -109,9 +109,9 @@
                           
                           <div class="taxa-selector">
                               <div class="taxa-options">
-                                  <p>Tipo de Preço:</p>
+                                  <p>Tipo de Preço</p>
                                   <div class="toggle-container">
-                                      <span class="toggle-label active" id="label-regular">Regular</span>
+                                      <span class="toggle-label active" id="label-regular">Sem Parceria</span>
                                       <label class="switch">
                                           <input type="checkbox" id="tipo-preco-toggle">
                                           <span class="slider round"></span>
@@ -123,15 +123,15 @@
                           
                           <div class="result-container">
                               <div class="result-item">
-                                  <span class="result-label">Taxa Aplicada:</span>
+                                  <span class="result-label">Taxa Aplicada</span>
                                   <span class="result-value" id="taxa-aplicada">-</span>
                               </div>
                               <div class="result-item">
-                                  <span class="result-label">Valor da Taxa:</span>
+                                  <span class="result-label">Valor da Taxa</span>
                                   <span class="result-value" id="valor-taxa">-</span>
                               </div>
                               <div class="result-item highlight">
-                                  <span class="result-label">Valor Limpo:</span>
+                                  <span class="result-label">Valor Limpo</span>
                                   <span class="result-value" id="valor-limpo">-</span>
                               </div>
                           </div>

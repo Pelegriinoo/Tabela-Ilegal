@@ -524,8 +524,8 @@ function inicializarCalculadora() {
     
     if (tipo === 'regular') {
       infoElement.innerHTML = `
-        <li>Regular: <strong>25%</strong> para valores abaixo de 1 milhão</li>
-        <li>Regular: <strong>20%</strong> para valores acima de 1 milhão</li>
+        <li>Sem Parceria - <strong>25%</strong> para valores abaixo de 1 milhão</li>
+        <li>Sem Parceria - <strong>20%</strong> para valores acima de 1 milhão</li>
       `;
     } else {
       infoElement.innerHTML = `
