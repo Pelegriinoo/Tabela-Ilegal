@@ -1,5 +1,6 @@
 const discordConfig = {
-  webhookURL: "DISCORD_WEBHOOK_URL_PLACEHOLDER",
+  // O webhook será fornecido como variável de ambiente
+  webhookURL: "https://discord.com/api/webhooks/1374069878880997509/NCpwSnu6pdiabZxZYPShCRTb-mclYcUmEG3gyLnWCZ2X68Xp7QfZ-kc-8t0bzFJEEfA7",
   
   // Outras configurações permanecem as mesmas
   ativado: true,
