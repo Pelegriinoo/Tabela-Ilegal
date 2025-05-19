@@ -1748,3 +1748,53 @@ input:focus-visible {
 .item-card.redesigned:hover .item-icon::before {
   opacity: 1;
 }
+/* Melhorar a exibição de valores longos nos cards */
+.price-row.parceria .price-value {
+  min-width: 220px; /* Aumentado para acomodar valores maiores */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%; /* Limita ao tamanho do container */
+  font-size: 1rem; /* Reduz ligeiramente o tamanho da fonte */
+}
+
+/* Garantir que o card se expanda adequadamente */
+.item-card.redesigned {
+  width: 100%;
+  max-width: 550px; /* Aumentado para garantir espaço suficiente */
+}
+
+/* Melhorar o comportamento responsivo */
+@media (max-width: 576px) {
+  /* Em telas menores, permitir quebra de linha nos valores de parceria */
+  .price-row.parceria .price-value {
+    white-space: normal; /* Permite quebra de linha */
+    word-break: break-word; /* Quebra palavras longas */
+    hyphens: auto; /* Adiciona hifens quando necessário */
+    font-size: 0.9rem; /* Reduz ainda mais a fonte */
+  }
+  
+  /* Reduz o padding para economizar espaço */
+  .price-row {
+    padding: 12px 10px;
+  }
+}
+
+/* Solução alternativa para valores muito longos */
+.price-row.parceria {
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se necessário */
+}
+
+/* Em caso de valores extremamente longos, esta regra permite que o valor ocupe toda a largura */
+@media (max-width: 400px) {
+  .price-row.parceria {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .price-row.parceria .price-value {
+    margin-top: 5px;
+    width: 100%;
+    text-align: left;
+  }
+}
