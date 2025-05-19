@@ -9,18 +9,15 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      # Adicione aqui os passos de build se necessário
-      # - name: Install dependencies
-      #   run: npm install
-      # - name: Build
-      #   run: npm run build
-
+      - name: Inject Discord Webhook 🔑
+        run: |
+          # Substitui o placeholder pelo webhook real
+          sed -i "s|DISCORD_WEBHOOK_URL_PLACEHOLDER|${{ secrets.DISCORD_WEBHOOK_URL }}|g" discord.js
+        
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
