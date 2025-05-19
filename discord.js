@@ -1,6 +1,6 @@
 const discordConfig = {
-  // URL do seu webhook do Discord (será substituído pela GitHub Action)
-  webhookURL: "DISCORD_WEBHOOK_URL_PLACEHOLDER",
+  // O webhook será fornecido como variável de ambiente
+  webhookURL: process.env.DISCORD_WEBHOOK_URL,
   
   // Outras configurações permanecem as mesmas
   ativado: true,
