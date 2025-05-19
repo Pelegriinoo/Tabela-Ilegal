@@ -13,26 +13,26 @@
        { "nome": "UZI", "icone": "<i class='fas fa-gun'></i>", "preco_regular": 57750, "preco_parceria_min": 51975, "preco_parceria_max": 57750 }
      ]
    },
-   "lavagem": {
-     "titulo": "Lavagem",
-     "itens": [
-       {
-         "nome": "ABAIXO DE 1 MILHÃO",
-         "icone": "<i class='fas fa-money-bill-wave'></i>",
-         "preco_regular": "25%",
-         "preco_parceria_min": "20%",
-         "preco_parceria_max": "25%",
-         "isPercentage": true
-       },
-       {
-         "nome": "ACIMA DE 1 MILHÃO",
-         "icone": "<i class='fas fa-money-bill-wave'></i>",
-         "preco_regular": "20%",
-         "preco_parceria_min": "15%",
-         "preco_parceria_max": "20%",
-         "isPercentage": true
-       }
-     ]
+"lavagem": {
+  "titulo": "Lavagem",
+  "itens": [
+    {
+      "nome": "ABAIXO DE 1 MILHÃO",
+      "icone": "<i class='fas fa-money-bill-wave'></i>",
+      "preco_regular": "20%",
+      "preco_parceria_min": "15%",
+      "preco_parceria_max": "15%",
+      "isPercentage": true
+    },
+    {
+      "nome": "ACIMA DE 1 MILHÃO",
+      "icone": "<i class='fas fa-money-bill-wave'></i>",
+      "preco_regular": "25%",
+      "preco_parceria_min": "20%",
+      "preco_parceria_max": "20%",
+      "isPercentage": true
+    }
+      ]
    },
    "drogas": {
      "titulo": "Drogas",
