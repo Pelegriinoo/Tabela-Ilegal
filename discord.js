@@ -6,7 +6,7 @@ const discordConfig = {
   ativado: true,
   botName: "AVENUE ILEGAL - Bot de Preços",
   botAvatar: "https://i.imgur.com/YmbTn8k.png",
-  corEmbed: 0x00CFFF
+  corEmbed: 0x333333  // Cinza escuro em formato hexadecimal
 };
 
 // Mapeamento de emojis por categoria
