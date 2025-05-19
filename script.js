@@ -43,6 +43,12 @@ async function inicializarAplicacao() {
     
     melhorarInterface();
     
+    // Verifica e envia dados para o Discord (apenas uma vez)
+    if (window.discordIntegration && typeof window.discordIntegration.verificarMudancasEEnviar === 'function') {
+      console.log('Iniciando verificação de dados para o Discord...');
+      await window.discordIntegration.verificarMudancasEEnviar(data);
+    }
+    
     // Exibe loader
     document.getElementById('loader')?.classList.add('hidden');
   } catch (erro) {
