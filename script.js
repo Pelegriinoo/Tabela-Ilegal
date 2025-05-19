@@ -529,8 +529,8 @@ function inicializarCalculadora() {
       `;
     } else {
       infoElement.innerHTML = `
-        <li>Parceria: <strong>20%</strong> para valores abaixo de 1 milhão</li>
-        <li>Parceria: <strong>15%</strong> para valores acima de 1 milhão</li>
+        <li>Parceria - <strong>20%</strong> para valores abaixo de 1 milhão</li>
+        <li>Parceria - <strong>15%</strong> para valores acima de 1 milhão</li>
       `;
     }
   }
