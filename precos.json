@@ -62,13 +62,14 @@
        { "nome": "LOCKPICK", "icone": "<i class='fas fa-unlock'></i>", "preco_regular": 8000, "preco_parceria_min": 7500, "preco_parceria_max": 8000 },
        { "nome": "LOCKPICK DE COBRE", "icone": "<i class='fas fa-unlock'></i>", "preco_regular": 10000, "preco_parceria_min": 7000, "preco_parceria_max": 10000 },
        { "nome": "C4", "icone": "<i class='fas fa-bomb'></i>", "preco_regular": 1500, "preco_parceria_min": 1200, "preco_parceria_max": 1500 },
-       { "nome": "CARTÃO COMUM", "icone": "<i class='fas fa-credit-card'></i>", "preco_regular": 2475, "preco_parceria_min": 2145, "preco_parceria_max": 2475 },
-       { "nome": "CARTÃO ÉPICO", "icone": "<i class='fas fa-credit-card'></i>", "preco_regular": 13200, "preco_parceria_min": 11880, "preco_parceria_max": 13200 },
-       { "nome": "CARTÃO LENDÁRIO", "icone": "<i class='fas fa-credit-card'></i>", "preco_regular": 16500, "preco_parceria_min": 14850, "preco_parceria_max": 16500 },
-       { "nome": "PAGER", "icone": "<i class='fas fa-pager'></i>", "preco_regular": 16500, "preco_parceria_min": 14025, "preco_parceria_max": 16500 },
-       { "nome": "BLOQUEADOR DE SINAL", "icone": "<i class='fas fa-mobile-alt'></i>", "preco_regular": 6600, "preco_parceria_min": 5775, "preco_parceria_max": 6600 },
-       { "nome": "MOCHILA", "icone": "<i class='fas fa-hiking'></i>", "preco_regular": 8250, "preco_parceria_min": 7425, "preco_parceria_max": 8250 },
-       { "nome": "CORDA", "icone": "<i class='fas fa-tape'></i>", "preco_regular": 1650, "preco_parceria_min": 1320, "preco_parceria_max": 1650 }
+       { "nome": "CARTÃO COMUM", "icone": "<i class='fas fa-credit-card'></i>", "preco_regular": 2000, "preco_parceria_min": 1800, "preco_parceria_max": 2000 },
+       { "nome": "CARTÃO ÉPICO", "icone": "<i class='fas fa-credit-card'></i>", "preco_regular": 13500, "preco_parceria_min": 12000, "preco_parceria_max": 13500 },
+       { "nome": "CARTÃO LENDÁRIO", "icone": "<i class='fas fa-credit-card'></i>", "preco_regular": 16500, "preco_parceria_min": 15500, "preco_parceria_max": 16500 },
+       { "nome": "PAGER", "icone": "<i class='fas fa-pager'></i>", "preco_regular": 16500, "preco_parceria_min": 15500, "preco_parceria_max": 16500 },
+       { "nome": "BLOQUEADOR DE SINAL", "icone": "<i class='fas fa-mobile-alt'></i>", "preco_regular": 6500, "preco_parceria_min": 5700, "preco_parceria_max": 6500 },
+       { "nome": "MOCHILA", "icone": "<i class='fas fa-hiking'></i>", "preco_regular": 10000, "preco_parceria_min": 7500, "preco_parceria_max": 10000 },
+       { "nome": "CORDA", "icone": "<i class='fas fa-tape'></i>", "preco_regular": 1500, "preco_parceria_min": 1300, "preco_parceria_max": 1500 },
+       { "nome": "BILHETE", "icone": "<i class='fas fa-ticket-alt'></i>", "preco_regular": 2200, "preco_parceria_min": 1800, "preco_parceria_max": 2200 }
      ]
    }
  },
